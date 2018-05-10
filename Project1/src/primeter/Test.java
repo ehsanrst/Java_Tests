@@ -42,6 +42,5 @@ public class Test {
 			System.out.println("Primeter for Circle is: " + pC.primeter());
 			break;
 		}
-		new PrimFrame().setVisible(true);
 	}
 }

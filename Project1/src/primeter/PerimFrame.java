@@ -23,7 +23,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class PrimFrame extends JFrame {
+public class PerimFrame extends JFrame {
 
 	private JPanel lable;
 
@@ -39,7 +39,7 @@ public class PrimFrame extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PrimFrame frame = new PrimFrame();
+					PerimFrame frame = new PerimFrame();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -49,23 +49,23 @@ public class PrimFrame extends JFrame {
 	}
 
 	// Create the frame
-	public PrimFrame() {
+	public PerimFrame() {
 		label.setLabelFor(label);
 		label.setIcon(new ImageIcon(
-				PrimFrame.class
+				PerimFrame.class
 						.getResource("/com/sun/java/swing/plaf/motif/icons/DesktopIcon.gif")));
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(550, 200, 750, 500);
 		lable = new JPanel();
-		lable.setToolTipText("Primeter of Triangular");
+		lable.setToolTipText("Perimeter of Triangular");
 		lable.setBorder(new EmptyBorder(0, 0, 0, 0));
 		setContentPane(lable);
 
 		txtT = new JTextField();
 		txtT.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		txtT.setEditable(false);
-		txtT.setText("what's yor shape for calculate Primeter?");
+		txtT.setText("what's yor shape for calculate Perimeter?");
 		txtT.setColumns(25);
 
 		btnTriangular = new JButton("Triangular");
@@ -83,7 +83,7 @@ public class PrimFrame extends JFrame {
 				Primeter pT = new Triangular(aT, bT, cT);
 
 				JOptionPane.showMessageDialog(null,
-						"Primeter for Triangular is: " + pT.primeter());
+						"Perimeter for Triangular is: " + pT.primeter());
 			}
 		});
 		btnTriangular.setForeground(Color.BLACK);
@@ -96,7 +96,7 @@ public class PrimFrame extends JFrame {
 				String fr = JOptionPane.showInputDialog("Enter side length: ");
 				double aS = Double.parseDouble(fr);
 				Primeter pS = new Square(aS);
-				JOptionPane.showMessageDialog(null, "Primeter for Square is: "
+				JOptionPane.showMessageDialog(null, "Perimeter for Square is: "
 						+ pS.primeter());
 			}
 		});
@@ -115,7 +115,7 @@ public class PrimFrame extends JFrame {
 				double bR = Double.parseDouble(sc);
 				Primeter pR = new Rectangular(aR, bR);
 				JOptionPane.showMessageDialog(null,
-						"Primeter for Rectangular is: " + pR.primeter());
+						"Perimeter for Rectangular is: " + pR.primeter());
 
 			}
 		});
@@ -131,7 +131,7 @@ public class PrimFrame extends JFrame {
 				double r = Double.parseDouble(fr);
 				Primeter pC = new Circle(r);
 				JOptionPane.showMessageDialog(null,
-						"Primeter for Rectangular is: " + pC.primeter());
+						"Perimeter for Rectangular is: " + pC.primeter());
 			}
 		});
 		btnCircle.setForeground(Color.BLACK);
