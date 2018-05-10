@@ -80,7 +80,7 @@ public class PerimFrame extends JFrame {
 				double aT = Double.parseDouble(fr);
 				double bT = Double.parseDouble(sc);
 				double cT = Double.parseDouble(th);
-				Primeter pT = new Triangular(aT, bT, cT);
+				Perimeter pT = new Triangular(aT, bT, cT);
 
 				JOptionPane.showMessageDialog(null,
 						"Perimeter for Triangular is: " + pT.primeter());
@@ -95,7 +95,7 @@ public class PerimFrame extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				String fr = JOptionPane.showInputDialog("Enter side length: ");
 				double aS = Double.parseDouble(fr);
-				Primeter pS = new Square(aS);
+				Perimeter pS = new Square(aS);
 				JOptionPane.showMessageDialog(null, "Perimeter for Square is: "
 						+ pS.primeter());
 			}
@@ -113,7 +113,7 @@ public class PerimFrame extends JFrame {
 						.showInputDialog("Enter the second side's length: ");
 				double aR = Double.parseDouble(fr);
 				double bR = Double.parseDouble(sc);
-				Primeter pR = new Rectangular(aR, bR);
+				Perimeter pR = new Rectangular(aR, bR);
 				JOptionPane.showMessageDialog(null,
 						"Perimeter for Rectangular is: " + pR.primeter());
 
@@ -129,7 +129,7 @@ public class PerimFrame extends JFrame {
 				String fr = JOptionPane
 						.showInputDialog("Enter Radius length: ");
 				double r = Double.parseDouble(fr);
-				Primeter pC = new Circle(r);
+				Perimeter pC = new Circle(r);
 				JOptionPane.showMessageDialog(null,
 						"Perimeter for Rectangular is: " + pC.primeter());
 			}

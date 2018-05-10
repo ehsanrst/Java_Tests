@@ -1,7 +1,7 @@
 package primeter;
 
 //subclass
-public class Circle extends Primeter {
+public class Circle extends Perimeter {
 
 	private double r, p;
 

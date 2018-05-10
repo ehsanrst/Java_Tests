@@ -18,13 +18,13 @@ public class Test {
 			b = scan.nextDouble();
 			System.out.println("Enter third side length:");
 			c = scan.nextDouble();
-			Primeter pT = new Triangular(a, b, c);
+			Perimeter pT = new Triangular(a, b, c);
 			System.out.println("Primeter for Triangular is: " + pT.primeter());
 			break;
 		case 2:
 			System.out.println("Enter side length:");
 			a = scan.nextDouble();
-			Primeter pS = new Square(a);
+			Perimeter pS = new Square(a);
 			System.out.println("Primeter for Square is: " + pS.primeter());
 			break;
 		case 3:
@@ -32,13 +32,13 @@ public class Test {
 			a = scan.nextDouble();
 			System.out.println("Enter second side length:");
 			b = scan.nextDouble();
-			Primeter pR = new Rectangular(a, b);
+			Perimeter pR = new Rectangular(a, b);
 			System.out.println("Primeter for Rectangular is: " + pR.primeter());
 			break;
 		case 4:
 			System.out.println("Enter radius:");
 			r = scan.nextDouble();
-			Primeter pC = new Circle(r);
+			Perimeter pC = new Circle(r);
 			System.out.println("Primeter for Circle is: " + pC.primeter());
 			break;
 		}

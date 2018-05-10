@@ -1,7 +1,7 @@
 package primeter;
 
 //subclass
-public class Triangular extends Primeter {
+public class Triangular extends Perimeter {
 	private double a, b, c, p;
 
 	// constructor

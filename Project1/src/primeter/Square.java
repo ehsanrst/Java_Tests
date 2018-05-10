@@ -1,7 +1,7 @@
 package primeter;
 
 //subclass
-public class Square extends Primeter {
+public class Square extends Perimeter {
 
 	private double a, p;
 
