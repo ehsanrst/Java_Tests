@@ -2,7 +2,7 @@
 
 import javax.swing.JFrame;
 
-public class JFrameTest {
+public class JFrameTest2 {
 	public static void main(String[] args) {
 
 		JFrame2 frame = new JFrame2(); // Make Object
