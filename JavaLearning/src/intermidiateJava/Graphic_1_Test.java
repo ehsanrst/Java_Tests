@@ -1,5 +1,7 @@
 package intermidiateJava;
 
+//Lesson1: make panel inside frame
+
 //here we use any panel we built into a frame
 //import library
 import javax.swing.*;

@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class BackColor extends JFrame {
+public class BackColorFrame extends JFrame {
 	// class members (variables)
 	private JButton b;
 	private Color color = (Color.WHITE);
@@ -14,12 +14,12 @@ public class BackColor extends JFrame {
 	// private JLabel label;
 
 	// Constructor=================
-	public BackColor() {
+	public BackColorFrame() {
 		// FIRST write "title"
 		super("The title");
 		// setLayout(new FlowLayout());
 		// label = new JLabel("Welcome");
-		panel = new JPanel();
+		panel = new JPanel();// panel is an area of a frame
 		panel.setBackground(color);
 
 		b = new JButton("please choose a color");
@@ -45,7 +45,7 @@ public class BackColor extends JFrame {
 		// OR:
 		setBounds(750, 300, 450, 250);// Size with position
 		setVisible(true);
-
+		// setResizable(false);
 		/*
 		 * we write any build operation in constructor to when this class
 		 * "Graphic_2 the frame from JFrame" called from anywhere this build
