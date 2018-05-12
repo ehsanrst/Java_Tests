@@ -2,7 +2,7 @@ package primeter;
 
 import java.util.Scanner;
 
-public class Test {
+public class TestCode {
 	public static void main(String[] args) {
 		double a, b, c, r;
 		Scanner scan = new Scanner(System.in);

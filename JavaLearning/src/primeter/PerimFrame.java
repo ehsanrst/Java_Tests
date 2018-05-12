@@ -18,10 +18,11 @@ import java.awt.Color;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.LayoutStyle.ComponentPlacement;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Toolkit;
+import javax.swing.SwingConstants;
 
 public class PerimFrame extends JFrame {
 
@@ -50,11 +51,16 @@ public class PerimFrame extends JFrame {
 
 	// Create the frame
 	public PerimFrame() {
+		setResizable(false);
+		setIconImage(Toolkit
+				.getDefaultToolkit()
+				.getImage(
+						PerimFrame.class
+								.getResource("/com/sun/java/swing/plaf/windows/icons/Question.gif")));
 		label.setLabelFor(label);
 		label.setIcon(new ImageIcon(
 				PerimFrame.class
 						.getResource("/com/sun/java/swing/plaf/motif/icons/DesktopIcon.gif")));
-		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(550, 200, 750, 500);
 		lable = new JPanel();
@@ -63,10 +69,11 @@ public class PerimFrame extends JFrame {
 		setContentPane(lable);
 
 		txtT = new JTextField();
+		txtT.setHorizontalAlignment(SwingConstants.CENTER);
 		txtT.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		txtT.setEditable(false);
 		txtT.setText("what's yor shape for calculate Perimeter?");
-		txtT.setColumns(25);
+		txtT.setColumns(23);
 
 		btnTriangular = new JButton("Triangular");
 		btnTriangular.addActionListener(new ActionListener() {
@@ -87,7 +94,7 @@ public class PerimFrame extends JFrame {
 			}
 		});
 		btnTriangular.setForeground(Color.BLACK);
-		btnTriangular.setBackground(Color.LIGHT_GRAY);
+		btnTriangular.setBackground(Color.MAGENTA);
 		btnTriangular.setFont(new Font("Tahoma", Font.PLAIN, 22));
 
 		btnSquare = new JButton("Square");
@@ -102,7 +109,7 @@ public class PerimFrame extends JFrame {
 		});
 		btnSquare.setForeground(Color.BLACK);
 		btnSquare.setFont(new Font("Tahoma", Font.PLAIN, 22));
-		btnSquare.setBackground(Color.LIGHT_GRAY);
+		btnSquare.setBackground(Color.GREEN);
 
 		btnRectangular = new JButton("Rectangular");
 		btnRectangular.addActionListener(new ActionListener() {
@@ -120,7 +127,7 @@ public class PerimFrame extends JFrame {
 			}
 		});
 		btnRectangular.setFont(new Font("Tahoma", Font.PLAIN, 22));
-		btnRectangular.setBackground(Color.LIGHT_GRAY);
+		btnRectangular.setBackground(Color.YELLOW);
 		btnRectangular.setForeground(Color.BLACK);
 
 		btnCircle = new JButton("Circle");
@@ -135,57 +142,54 @@ public class PerimFrame extends JFrame {
 			}
 		});
 		btnCircle.setForeground(Color.BLACK);
-		btnCircle.setBackground(Color.LIGHT_GRAY);
+		btnCircle.setBackground(Color.CYAN);
 		btnCircle.setFont(new Font("Tahoma", Font.PLAIN, 22));
+
+		JLabel lblNewLabel = new JLabel("Designed by EhsanRst");
 		GroupLayout gl_lable = new GroupLayout(lable);
 		gl_lable.setHorizontalGroup(gl_lable
 				.createParallelGroup(Alignment.LEADING)
 				.addGroup(
+						Alignment.TRAILING,
 						gl_lable.createSequentialGroup()
-								.addContainerGap()
+								.addContainerGap(676, Short.MAX_VALUE)
+								.addComponent(lblNewLabel).addContainerGap())
+				.addGroup(
+						gl_lable.createSequentialGroup()
+								.addGap(77)
 								.addGroup(
 										gl_lable.createParallelGroup(
-												Alignment.LEADING)
-												.addGroup(
-														gl_lable.createSequentialGroup()
-																.addGroup(
-																		gl_lable.createParallelGroup(
-																				Alignment.LEADING)
-																				.addGroup(
-																						gl_lable.createSequentialGroup()
-																								.addComponent(
-																										btnRectangular,
-																										GroupLayout.DEFAULT_SIZE,
-																										244,
-																										Short.MAX_VALUE)
-																								.addGap(18)
-																								.addComponent(
-																										btnCircle,
-																										GroupLayout.PREFERRED_SIZE,
-																										240,
-																										GroupLayout.PREFERRED_SIZE))
-																				.addComponent(
-																						btnTriangular,
-																						GroupLayout.DEFAULT_SIZE,
-																						502,
-																						Short.MAX_VALUE))
-																.addPreferredGap(
-																		ComponentPlacement.UNRELATED)
-																.addComponent(
-																		btnSquare,
-																		GroupLayout.PREFERRED_SIZE,
-																		206,
-																		GroupLayout.PREFERRED_SIZE)
-																.addContainerGap())
-												.addGroup(
-														Alignment.TRAILING,
-														gl_lable.createSequentialGroup()
-																.addComponent(
-																		txtT,
-																		GroupLayout.PREFERRED_SIZE,
-																		GroupLayout.DEFAULT_SIZE,
-																		GroupLayout.PREFERRED_SIZE)
-																.addGap(62)))));
+												Alignment.LEADING, false)
+												.addComponent(
+														btnRectangular,
+														GroupLayout.DEFAULT_SIZE,
+														GroupLayout.DEFAULT_SIZE,
+														Short.MAX_VALUE)
+												.addComponent(
+														btnTriangular,
+														GroupLayout.DEFAULT_SIZE,
+														188, Short.MAX_VALUE))
+								.addGap(188)
+								.addGroup(
+										gl_lable.createParallelGroup(
+												Alignment.LEADING, false)
+												.addComponent(
+														btnCircle,
+														GroupLayout.DEFAULT_SIZE,
+														GroupLayout.DEFAULT_SIZE,
+														Short.MAX_VALUE)
+												.addComponent(
+														btnSquare,
+														GroupLayout.DEFAULT_SIZE,
+														187, Short.MAX_VALUE))
+								.addGap(104))
+				.addGroup(
+						Alignment.TRAILING,
+						gl_lable.createSequentialGroup()
+								.addContainerGap(151, Short.MAX_VALUE)
+								.addComponent(txtT, GroupLayout.PREFERRED_SIZE,
+										464, GroupLayout.PREFERRED_SIZE)
+								.addGap(129)));
 		gl_lable.setVerticalGroup(gl_lable
 				.createParallelGroup(Alignment.LEADING)
 				.addGroup(
@@ -193,38 +197,36 @@ public class PerimFrame extends JFrame {
 								.addContainerGap()
 								.addComponent(txtT, GroupLayout.PREFERRED_SIZE,
 										55, GroupLayout.PREFERRED_SIZE)
-								.addGap(170)
+								.addGap(84)
 								.addGroup(
 										gl_lable.createParallelGroup(
-												Alignment.TRAILING)
-												.addGroup(
-														gl_lable.createSequentialGroup()
-																.addComponent(
-																		btnTriangular,
-																		GroupLayout.PREFERRED_SIZE,
-																		71,
-																		GroupLayout.PREFERRED_SIZE)
-																.addGap(18)
-																.addGroup(
-																		gl_lable.createParallelGroup(
-																				Alignment.TRAILING)
-																				.addComponent(
-																						btnCircle,
-																						GroupLayout.DEFAULT_SIZE,
-																						125,
-																						Short.MAX_VALUE)
-																				.addComponent(
-																						btnRectangular,
-																						Alignment.LEADING,
-																						GroupLayout.DEFAULT_SIZE,
-																						125,
-																						Short.MAX_VALUE)))
+												Alignment.BASELINE)
+												.addComponent(
+														btnRectangular,
+														GroupLayout.PREFERRED_SIZE,
+														112,
+														GroupLayout.PREFERRED_SIZE)
 												.addComponent(
 														btnSquare,
-														GroupLayout.DEFAULT_SIZE,
-														214, Short.MAX_VALUE))
+														GroupLayout.PREFERRED_SIZE,
+														113,
+														GroupLayout.PREFERRED_SIZE))
+								.addGap(47)
+								.addGroup(
+										gl_lable.createParallelGroup(
+												Alignment.LEADING)
+												.addComponent(
+														btnCircle,
+														GroupLayout.PREFERRED_SIZE,
+														112,
+														GroupLayout.PREFERRED_SIZE)
+												.addComponent(
+														btnTriangular,
+														GroupLayout.PREFERRED_SIZE,
+														116,
+														GroupLayout.PREFERRED_SIZE))
+								.addGap(8).addComponent(lblNewLabel)
 								.addContainerGap()));
 		lable.setLayout(gl_lable);
 	}
-
 }
