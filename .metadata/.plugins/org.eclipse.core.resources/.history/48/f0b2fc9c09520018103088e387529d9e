@@ -1,0 +1,12 @@
+public class Exp2TimeClass {
+	public static void main(String[] args) {
+
+		// TimeClass timeObject = new TimeClass();
+		// timeObject.setTime(17, 5, 24);
+		// System.out.println(timeObject.toMilitary());
+		// System.out.println(timeObject.toString());
+
+		TimeClass2 timeObject = new TimeClass2(13, 6);
+		System.out.println(timeObject.toMilitary());
+	}
+}

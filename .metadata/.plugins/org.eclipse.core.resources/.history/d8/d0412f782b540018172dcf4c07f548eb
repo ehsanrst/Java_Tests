@@ -1,0 +1,11 @@
+//Reader and Writer and exceptions and how to refuse errors
+
+import java.io.FileReader;
+
+public class ExpExceptions {
+	public static void main(String[] args) {
+
+		FileReader fr
+		
+	}
+}

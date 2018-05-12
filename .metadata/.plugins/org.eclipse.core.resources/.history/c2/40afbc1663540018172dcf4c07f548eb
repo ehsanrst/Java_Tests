@@ -1,0 +1,10 @@
+package area;
+
+public class Triangle extends Area {
+	private double a, b, c;
+
+	@Override
+	public void area() {
+
+	}
+}

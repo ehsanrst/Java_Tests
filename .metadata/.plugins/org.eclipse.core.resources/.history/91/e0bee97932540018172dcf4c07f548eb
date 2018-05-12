@@ -1,0 +1,13 @@
+//Polymorphism
+
+public class Polymorphism {
+	public static void main(String[] args) {
+
+		PolyClass2 obj1 = new PolyClass2();
+		PolyClass1 obj2 = new PolyClass2(); // polymorphism
+
+		// PolymorPhic Array
+		PolyClass1 arr[] = new PolyClass1[2]; // have 2 subClass
+
+	}
+}

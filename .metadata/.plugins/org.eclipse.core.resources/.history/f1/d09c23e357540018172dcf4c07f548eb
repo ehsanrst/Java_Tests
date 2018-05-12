@@ -1,0 +1,6 @@
+// Lesson PolymorPhic argument
+
+//Sub Class 3
+public class PolyClass4 extends PolyClass1 {
+
+}

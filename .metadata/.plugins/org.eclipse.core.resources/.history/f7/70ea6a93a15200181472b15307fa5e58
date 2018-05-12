@@ -1,0 +1,10 @@
+public class ExpEnum1 {
+	public static void main(String[] args) {
+
+		// use enhanced for loop
+		for (Enum1 people : Enum1.values()) {
+
+		}
+
+	}
+}

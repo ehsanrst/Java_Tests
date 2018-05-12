@@ -1,0 +1,13 @@
+package intermidiateJava;
+
+import javax.swing.JFrame;
+
+public class BackColor_Test {
+
+	public static void main(String[] args) {
+
+		Graphic_2 frame2 = new Graphic_2();
+		frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}

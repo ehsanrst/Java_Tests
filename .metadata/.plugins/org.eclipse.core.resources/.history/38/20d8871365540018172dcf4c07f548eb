@@ -1,0 +1,11 @@
+package primeter;
+
+public class Rectangular extends Primeter {
+	private double a, b, p;
+
+	@Override
+	public double primeter() {
+		p = 2 * (a + b);
+		return p;
+	}
+}

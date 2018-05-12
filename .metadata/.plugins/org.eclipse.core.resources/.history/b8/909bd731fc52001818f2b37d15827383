@@ -1,0 +1,9 @@
+public class ClassB extends ClassA {
+
+	@Override //override mea
+	public String callMe() {
+		String p = super.callMe();
+		return "class b-- > fom me!!" + p;
+	}
+
+}

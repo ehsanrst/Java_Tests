@@ -1,0 +1,10 @@
+
+public class ExpEnum1 {
+	public static void main(String[] args) {
+
+		for (Enum1 string : args) {
+			
+		}
+		
+	}
+}

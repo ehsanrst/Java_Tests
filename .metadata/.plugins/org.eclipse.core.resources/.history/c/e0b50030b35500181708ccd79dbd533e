@@ -1,0 +1,13 @@
+package intermidiateJava;
+
+//import library with (.*) to call hole library
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+//creat graphic class as child of JPanel class
+public class Graphic extends JPanel {
+	public void paintComponent(Graphics g) {
+
+	}
+}

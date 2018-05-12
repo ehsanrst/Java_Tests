@@ -1,0 +1,10 @@
+package intermidiateJava;
+
+//import library
+import javax.sing.*;
+
+public class GraphicTest {
+	public static void main(String[] args) {
+
+	}
+}

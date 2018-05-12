@@ -1,0 +1,7 @@
+//Reader and Writer and exceptions and how to refuse errors
+
+public class ExpExceptions {
+	public static void main(String[] args) {
+
+	}
+}

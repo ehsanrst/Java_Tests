@@ -1,0 +1,10 @@
+// Lesson PolymorPhic argument
+
+//Sub Class 3
+public class PolyClass4 extends PolyClass1 {
+
+	public void digest(PolyClass1 x) {
+
+	}
+
+}

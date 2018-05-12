@@ -1,0 +1,8 @@
+public class Exp {
+	public static void main(String[] args) {
+
+		new JFrame3().setVisible(true); // build object and set Visible at the
+										// same time
+
+	}
+}

@@ -1,0 +1,20 @@
+package primeter;
+
+//subclass
+public class Circle extends Primeter {
+
+	private double r, p;
+
+	// constructor
+	public Circle(double r) {
+		this.r = r;
+	}
+
+	// methods
+	@Override
+	public double primeter() {
+		p = 2 * Math.PI * r;
+		return p;
+	}
+
+}

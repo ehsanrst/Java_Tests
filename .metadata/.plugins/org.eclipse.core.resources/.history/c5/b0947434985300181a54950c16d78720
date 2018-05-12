@@ -1,0 +1,13 @@
+// GUI : graphical user interface
+
+import javax.swing.JOptionPane;
+
+public class ExpGui {
+	public static void main(String[] args) {
+
+		String fr = JOptionPane.showInputDialog("Please enter a number: ");
+		String sc = JOptionPane
+				.showInputDialog("Please enter the second number: ");
+
+	}
+}

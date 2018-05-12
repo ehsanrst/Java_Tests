@@ -1,0 +1,7 @@
+// Enumeration to make Constants
+
+public enum EnumExp {
+
+	Ehsan("Good boy", "26"), Mohamad("Best friend", "26");
+
+}

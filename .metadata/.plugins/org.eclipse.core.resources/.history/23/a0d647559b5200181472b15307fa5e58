@@ -1,0 +1,13 @@
+// Composition is to use other Classes as type of another Class'es variables
+
+public class ExpComposition {
+
+	private String name;
+	private TimeClass3 birthday; // Composition (use TimeClass3 here)
+
+	public ExpComposition(String name, int birthday) {
+		this.name = name;
+		this.birthday = birthday;
+	}
+
+}

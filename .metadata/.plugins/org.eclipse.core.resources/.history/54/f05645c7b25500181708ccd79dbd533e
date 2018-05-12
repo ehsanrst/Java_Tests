@@ -1,0 +1,8 @@
+package intermidiateJava;
+
+//import library with (.*) to call hole library
+import javax.swing.JPanel;
+
+public class Graphic extends JPanel {
+
+}

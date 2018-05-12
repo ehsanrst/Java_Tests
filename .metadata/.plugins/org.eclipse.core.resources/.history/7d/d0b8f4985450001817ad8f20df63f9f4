@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Exp1 {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		Exp1Metod object = new Exp1Metod();
+
+		// first lesson
+		object.method();
+		object.method2();
+
+		// second lesson
+		System.out.println("What's your name?");
+		String esm = scan.nextLine();
+		object.simpleMessage(esm);
+
+		// third lesson
+		System.out.println("Please Enter your mother's name?");
+		String temp = scan.nextLine();
+		object.setGirlName(temp);
+		object.saying();
+
+	}
+}

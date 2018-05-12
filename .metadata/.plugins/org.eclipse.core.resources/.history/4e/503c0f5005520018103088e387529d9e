@@ -1,0 +1,62 @@
+// encapsulation and OverLoading Lesson
+
+public class TimeClass2 {
+
+	private int hour;
+	private int minute;
+	private int second;
+
+	// Encapsulation is to make setter and getter
+	public int getHour() {
+		return hour;
+	}
+
+	public void setHour(int hour) {
+		this.hour = hour;
+	}
+
+	public int getMinute() {
+		return minute;
+	}
+
+	public void setMinute(int minute) {
+		this.minute = minute;
+	}
+
+	public int getSecond() {
+		return second;
+	}
+
+	public void setSecond(int second) {
+		this.second = second;
+	}
+
+	// Constructor
+	public TimeClass2() {
+		this(0, 0, 0);
+	}
+
+	public TimeClass2(int h) {
+		// Overload Constructor
+		this(h, 0, 0);
+
+	}
+
+	public TimeClass2(int h, int m) {
+		// Overload Constructor
+		this(h, m, 0);
+
+	}
+
+	public TimeClass2(int h, int m, int s) {
+		// Overload Constructor
+		setTime(h, m, s); // call Method
+	}
+
+	private void setTime(int h, int m, int s) {
+		setHour(h);
+		setMinute(m);
+		setSecond(s);
+	}
+
+}

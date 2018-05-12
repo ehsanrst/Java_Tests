@@ -1,0 +1,23 @@
+//JFrame lesson with Code
+
+import java.awt.FlowLayout; //for Button
+import javax.swing.JFrame; //for Frame
+import javax.swing.JLabel; //for Label
+
+//build child Class from JFrame
+public class JFrameTest2 extends JFrame {
+
+	// members
+	private JLabel item1;
+
+	// Constructor
+	public JFrameTest2() {
+		super("My Windows"); /*
+							 * always FIRST is for "title", we super it to
+							 * parent class
+							 */
+		setLayout(new FlowLayout()); // flow buttons layout
+		item1 = new JLabel("Salam"); // make Label
+
+	}
+}

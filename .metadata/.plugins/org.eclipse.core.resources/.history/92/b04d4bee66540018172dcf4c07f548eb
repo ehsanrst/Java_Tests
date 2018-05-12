@@ -1,0 +1,12 @@
+package primeter;
+
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out
+				.println("\"Primeter Program\"\nWhat your shape?\n1.trianglular\t2.square\n3.rectangular\t4.circle\n(Enter number:)");
+
+	}
+}

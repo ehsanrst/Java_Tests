@@ -1,0 +1,8 @@
+package area;
+
+public class Triangle extends Area {
+	@Override
+	public void area() {
+
+	}
+}

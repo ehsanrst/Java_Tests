@@ -1,0 +1,20 @@
+package primeter;
+
+public class Square extends Primeter {
+
+	private double a, p;
+
+	@Override
+	public double primeter() {
+		return p;
+	}
+
+	public double getA() {
+		return a;
+	}
+
+	public void setA(double a) {
+		this.a = a;
+	}
+
+}

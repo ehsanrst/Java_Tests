@@ -1,0 +1,11 @@
+package intermidiateJava;
+
+//import library
+import javax.swing.*;
+
+public class GraphicTest {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();// object JFrame
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}

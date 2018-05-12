@@ -1,0 +1,19 @@
+1525704151972	Encapsulate field 'hour'
+1525704174792	Encapsulate field 'minute'
+1525704179169	Encapsulate field 'second'
+1525771092205	Encapsulate field 'desc'
+1525771100659	Encapsulate field 'year'
+1525879422800	Delete element
+1525879484297	Delete element
+1525879672245	Delete element
+1525942005549	Delete element
+1525964557156	Delete element
+1525964631530	Encapsulate field 'a'
+1525964636465	Encapsulate field 'b'
+1525964640328	Encapsulate field 'c'
+1525965111880	Encapsulate field 'a'
+1525965395356	Encapsulate field 'a'
+1525965399385	Encapsulate field 'b'
+1525965866781	Encapsulate field 'r'
+1525979740008	Rename type 'Primeter'
+1526064770799	Infer generic type arguments

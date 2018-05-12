@@ -1,0 +1,8 @@
+//Hint: make this class Abstract
+package area;
+
+//SuperClass
+public abstract class Area {
+	public abstract void area();
+
+}

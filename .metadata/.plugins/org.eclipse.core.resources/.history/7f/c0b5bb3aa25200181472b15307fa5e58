@@ -1,0 +1,12 @@
+public class ExpEnum1 {
+	public static void main(String[] args) {
+
+		// use enhanced for loop
+		// Enum1 is the type of variable people here
+		for (Enum1 people : Enum1.values()) {
+			System.out.println(people + "\t" + people.getDesc()
+					+ people.getYear());
+		}
+
+	}
+}

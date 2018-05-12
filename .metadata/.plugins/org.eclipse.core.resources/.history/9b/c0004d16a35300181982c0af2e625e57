@@ -1,0 +1,18 @@
+//JFrame lesson with Code
+
+import java.awt.FlowLayout; //for button
+
+import javax.swing.JFrame; //for frame
+
+public class JFrameTest2 extends JFrame {
+
+	private JLabel item1;
+
+	public JFrameTest2() {
+		super("My Windows"); /*
+							 * FIRST is for "title", we super it to parent class
+							 */
+		setLayout(new FlowLayout()); // flow buttons layout
+
+	}
+}

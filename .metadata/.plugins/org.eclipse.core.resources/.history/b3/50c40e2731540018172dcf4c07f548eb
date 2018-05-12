@@ -1,0 +1,6 @@
+//Sub Class 2
+public class PolyClass3 extends PolyClass1 {
+	void eat() {
+		System.out.println("This is the class3");
+	}
+}

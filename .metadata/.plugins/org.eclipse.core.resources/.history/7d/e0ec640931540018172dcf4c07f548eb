@@ -1,0 +1,4 @@
+//Sub Class 1
+public class PolyClass2 extends PolyClass1 {
+
+}

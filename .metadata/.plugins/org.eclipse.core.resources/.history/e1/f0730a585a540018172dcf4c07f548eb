@@ -1,0 +1,22 @@
+//PolymorPhic Argument
+
+public class PolymorphicArgument {
+	public static void main(String[] args) {
+
+		PolyClass4 object = new PolyClass4(); // make object from class4
+		PolyClass1 food = new PolyClass1(); // to use method of class4
+		PolyClass1 food2 = new PolyClass2(); // class1 access to class2
+		PolyClass1 food3 = new PolyClass3(); // class1 access to class3
+
+		// call method in class4 with his initial parameter
+		object.digest(food);
+		/*
+		 * because class1 access to class 2&3 and is a parameter for method of
+		 * class4, then class4 access them too cause it's method access to their
+		 * methods
+		 */
+		object.digest(food2);
+		object.digest(food3);
+
+	}
+}

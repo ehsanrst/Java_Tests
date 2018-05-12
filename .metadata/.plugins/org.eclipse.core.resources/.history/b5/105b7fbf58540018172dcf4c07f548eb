@@ -1,0 +1,12 @@
+//PolymorPhic Argument
+
+public class PolymorphicArgument {
+	public static void main(String[] args) {
+
+		PolyClass4 object = new PolyClass4();
+		PolyClass1 food = new PolyClass1();
+
+		object.digest(food);
+
+	}
+}

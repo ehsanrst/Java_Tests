@@ -1,0 +1,16 @@
+package intermidiateJava;
+
+//import library
+import javax.swing.*;
+
+public class Graphic_1_Test {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();// object JFrame
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// set EXIT
+
+		Graphic1 panel = new Graphic1();// object Graphic(object JPanel)
+		frame.add(panel);// add panel into frame
+		frame.setSize(400, 250); // build frame
+		frame.setVisible(true);
+	}
+}

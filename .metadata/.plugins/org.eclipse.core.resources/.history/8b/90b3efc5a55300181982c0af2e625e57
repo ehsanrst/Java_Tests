@@ -1,0 +1,19 @@
+import javax.swing.JFrame;
+
+//Use JFrame2 in this Class
+
+public class JFrameTest {
+	public static void main(String[] args) {
+
+		JFrame2 frame = new JFrame2(); // Make Object
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); /*
+															 * ATTENTION: after
+															 * make object we
+															 * must define CLOSE
+															 * operation for
+															 * Frame to when we
+															 * click exit button
+															 * program be end
+															 */
+	}
+}

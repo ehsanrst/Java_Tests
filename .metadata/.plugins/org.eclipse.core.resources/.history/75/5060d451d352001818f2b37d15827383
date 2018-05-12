@@ -1,0 +1,7 @@
+public class ClassA {
+
+	public String callMe() {
+		return "class a";
+	}
+
+}
