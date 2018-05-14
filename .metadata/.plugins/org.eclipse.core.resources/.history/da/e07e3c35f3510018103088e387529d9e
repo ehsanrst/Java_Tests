@@ -1,8 +1,0 @@
-public class Exp2 {
-	public static void main(String[] args) {
-
-		TimeClass timeObject = new TimeClass();
-		System.out.println(timeObject.toMilitary());
-
-	}
-}
