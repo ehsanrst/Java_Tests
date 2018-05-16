@@ -1,8 +1,0 @@
-//Inheritance lesson
-
-public class ExpInheritance {
-	public static void main(String[] args) {
-		Class2.print();
-		// Class2 inherit print method from Class1
-	}
-}

@@ -1,7 +1,0 @@
-// Composition is to use other Classes az type of another Class'es variables
-public class ExpComposition {
-
-	private String name;
-	private TimeClass3 birthday; // Composition
-
-}

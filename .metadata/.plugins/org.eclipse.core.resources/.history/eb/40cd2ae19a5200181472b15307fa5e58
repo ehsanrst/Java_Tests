@@ -1,8 +1,0 @@
-
-public class ExpComposition {
-
-	private String name;
-	private TimeClass3 birthday; // Composition
-	
-
-}

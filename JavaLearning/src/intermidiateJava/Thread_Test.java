@@ -6,7 +6,7 @@ public class Thread_Test {
 	public static void main(String[] args) {
 		/* the programs (multi programs) */
 		Runnable r1 = new Thread_Exp("First thread"); // polymotPhism
-		// first Class with it's initial
+		// first Class with it's initial, Thread accept runnable parameter
 		Thread t1 = new Thread(r1);
 		// second Class
 		Thread t2 = new Thread(new Thread_Exp("Second thread"));

@@ -1,5 +1,0 @@
-public class Class2 {
-	public static void print2() {
-		System.out.println("Class2");
-	}
-}

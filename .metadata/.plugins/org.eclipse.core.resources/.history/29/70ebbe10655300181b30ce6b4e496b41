@@ -1,5 +1,0 @@
-public class Class3 extends Class1 {
-	public static void print() {
-		System.out.println("");
-	}
-}
