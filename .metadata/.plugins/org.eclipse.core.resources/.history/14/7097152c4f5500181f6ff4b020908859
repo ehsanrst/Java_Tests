@@ -1,9 +1,0 @@
-package primeter;
-
-public class TestFrame {
-
-	public static void main(String[] args) {
-		PerimFrame frame = new PerimFrame();
-	}
-
-}

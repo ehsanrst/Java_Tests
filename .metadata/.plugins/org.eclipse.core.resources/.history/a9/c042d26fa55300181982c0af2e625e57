@@ -1,9 +1,0 @@
-//Use JFrame2 in this Class
-
-public class JFrameTest {
-	public static void main(String[] args) {
-
-		JFrame2 frame = new JFrame2(); // Make Object
-
-	}
-}

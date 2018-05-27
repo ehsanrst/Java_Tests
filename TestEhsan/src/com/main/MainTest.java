@@ -1,47 +1,44 @@
 package com.main;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.util.Calendar;
 
 public class MainTest {
 
 	public static void main(String[] arg) {
 
 		// File file = new File("C:\\Users\\Ehsan\\Pictures\\1.jpg");
-		FileInputStream in = null;
-		FileOutputStream out = null;
-
-		try {
-			in = new FileInputStream("C:\\Users\\Ehsan\\Pictures\\1.jpg");
-			out = new FileOutputStream("C:\\Users\\Ehsan\\Pictures\\11.jpg");
-
-			int c;
-			while ((c = in.read()) != -1) {
-				out.write(c);
-			}
-
-		} catch (Exception ex) {
-		} finally {
-			if (in != null) {
-				try {
-					in.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-			if (out != null) {
-				try {
-					out.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
+		// FileInputStream in = null;
+		// FileOutputStream out = null;
+		//
+		// try {
+		// in = new FileInputStream("C:\\Users\\Ehsan\\Pictures\\1.jpg");
+		// out = new FileOutputStream("C:\\Users\\Ehsan\\Pictures\\11.jpg");
+		//
+		// int c;
+		// while ((c = in.read()) != -1) {
+		// out.write(c);
+		// }
+		//
+		// } catch (Exception ex) {
+		// } finally {
+		// if (in != null) {
+		// try {
+		// in.close();
+		// } catch (IOException e) {
+		// e.printStackTrace();
+		// }
+		// }
+		// if (out != null) {
+		// try {
+		// out.close();
+		// } catch (IOException e) {
+		// e.printStackTrace();
+		// }
+		// }
+		// }
 
 		// Cat ehsanCat = new Cat("Milk");
 		// ehsanCat.eatingMode();
@@ -55,7 +52,7 @@ public class MainTest {
 		// cal.set(Calendar.YEAR, 2011);
 		//
 		// System.out.println(cal.get(Calendar.YEAR));
-
+		//
 		// System.out.println(Factoriel.factRec(10));
 		//
 		// Calendar cal2 = Calendar.getInstance();
@@ -63,13 +60,14 @@ public class MainTest {
 		// System.out
 		// .println((cal2.getTimeInMillis() - cal.getTimeInMillis()) / 1000);
 		//
-		// Calendar cal3 = Calendar.getInstance();
-		// System.out.println(Factoriel.factIter(10));
-		//
-		// Calendar cal4 = Calendar.getInstance();
-		//
-		// System.out
-		// .println((cal4.getTimeInMillis() - cal3.getTimeInMillis()) / 1000);
+		Calendar cal3 = Calendar.getInstance();
+		System.out.println(Factoriel.factIter(10));
+
+		Calendar cal4 = Calendar.getInstance();
+
+		System.out
+				.println((cal4.getTimeInMillis() + -cal3.getTimeInMillis()) / 1000);
+		System.out.println(cal4.getTime());
 
 		//
 		//

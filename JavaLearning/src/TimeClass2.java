@@ -38,7 +38,7 @@ public class TimeClass2 {
 	// Constructor====================
 	// Multiple Constructor
 	public TimeClass2() {
-		this(0, 0, 0); // 'this' point to the structure that have all 3
+		this(0, 0, 0); // 'this' point to the constructor that have all 3
 						// variables
 	}
 

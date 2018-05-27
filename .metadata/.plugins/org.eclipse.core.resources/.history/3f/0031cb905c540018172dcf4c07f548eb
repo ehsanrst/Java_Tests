@@ -1,7 +1,0 @@
-//Sub Class 2
-public class PolyClass3 extends PolyClass1 {
-	// Override method
-	void eat() {
-		System.out.println("class3 eats Grass");
-	}
-}

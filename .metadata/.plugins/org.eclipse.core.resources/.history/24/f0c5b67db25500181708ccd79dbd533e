@@ -1,7 +1,0 @@
-package intermidiateJava;
-
-import javax.swing.JPanel;
-
-public class Graphic extends JPanel {
-
-}

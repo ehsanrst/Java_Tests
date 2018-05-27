@@ -1,9 +1,0 @@
-package primeter;
-
-//SuperClass
-//Hint: make this class Abstract
-public abstract class Area {
-
-	public abstract void area();
-
-}

@@ -1,9 +1,0 @@
-//Polymorphism
-
-public class Polymorphism {
-	public static void main(String[] args) {
-
-		polyClass2 obj2 = new PolyClass2();
-
-	}
-}

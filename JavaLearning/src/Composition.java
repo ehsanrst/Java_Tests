@@ -4,6 +4,7 @@ public class Composition {
 
 	private String name;
 	private TimeClass3 birthday; // Composition (use TimeClass3 here as type)
+	/* birthday is String */
 
 	// Constructor
 	public Composition(String name, TimeClass3 birthday) {
@@ -12,7 +13,7 @@ public class Composition {
 	}
 
 	/*
-	 * Override: when you on't want to call a method of a class'es parent you
+	 * Override: when you don't want to call a method of a class'es parent you
 	 * must write a method completely the same with that method in child class
 	 * that return your desire things this action call "Override"
 	 */

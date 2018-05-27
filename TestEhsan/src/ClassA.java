@@ -1,7 +1,10 @@
-public class ClassA {
+public abstract class ClassA {
+	public String name;
 
-	protected String callMe() {
-		return "class a";
+	public ClassA(String name) {
+		this.name = name;
 	}
+
+	protected abstract String callMe();
 
 }

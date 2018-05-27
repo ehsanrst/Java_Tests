@@ -1,9 +1,0 @@
-//PolymorPhic Argument
-
-public class PolymorphicArgument {
-	public static void main(String[] args) {
-
-		PolyClass4 object = new PolyClass4();
-
-	}
-}

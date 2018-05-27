@@ -8,10 +8,11 @@ public class OliveJar5 {
 
 	public ArrayList<Olive> olives;
 
+	// initializer
 	{
 		System.out.println("initializing...");
 		olives = new ArrayList<>();
-		olives.add(new Olive("Parvardeh", 0x000000));
+		olives.add(new Olive("Golden", 0xDA9100));
 	}
 
 	public OliveJar5() {
@@ -30,7 +31,8 @@ public class OliveJar5 {
 	}
 
 	public void reportOlives() {
-		/* Class in method */
+
+		/* Inner_Local_Class: Class in method */
 		class JarLid { // it's Private by itself
 			public void open() {
 				System.out.println("Go");
@@ -39,6 +41,16 @@ public class OliveJar5 {
 		}
 		new JarLid().open(); // use class (new constructor.method)
 		/* end */
+
+		/* Unknown_Inner_Local_Class: Object class */
+		new Object() {// Object class exist in java
+			public void open() {
+				System.out.println("Go");
+				System.out.println("wait!");
+			}
+		}.open();// open object class
+		/* end */
+
 		for (Olive o : olives) {
 			System.out.println("It's a " + o.oliveName + " olive!");
 		}

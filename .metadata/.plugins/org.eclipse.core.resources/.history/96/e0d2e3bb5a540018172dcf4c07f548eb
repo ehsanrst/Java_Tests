@@ -1,9 +1,0 @@
-// Lesson PolymorPhic argument
-
-public class PolyClass4 {
-
-	public void digest(PolyClass1 x) {
-		x.eat();
-	}
-
-}

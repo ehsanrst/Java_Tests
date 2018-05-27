@@ -1,7 +1,0 @@
-package area;
-
-public class Triangle extends Area {
-	public void area() {
-
-	}
-}
